@@ -1,0 +1,36 @@
+<div class="dashboard">
+    <div class="dashboard-side">
+      <div class="dashboard-side-heading">
+        <img src="../assets/Vector.png" alt="" />
+        <h2 >Lilies</h2>
+      </div>
+      <div class="side-button">
+      <div >
+          <app-side-detail [data]="dataOne"></app-side-detail>
+          <app-side-detail [data]="dataTwo"></app-side-detail>
+          <app-side-detail [data]="dataThree"></app-side-detail>
+          <app-side-detail [data]="dataFour"></app-side-detail>
+      </div>
+      </div>
+    </div>
+    <div class="dashboard-content">
+      <div class="dashboard-content-heading">
+          <div class="dashboard-content-heading-text">
+          <h2>    Good morning, Oghenevwede!</h2>
+         <p>What delicious meal are you craving today?</p> 
+          </div>
+          <div class="dashboard-content-heading-image">
+              <img src="../assets/40w 1.png" alt="">
+              <img src="../assets/Vector(1).png" alt="">
+          </div>
+      </div>
+      <div class="detail">
+          <div class="detail-first-row">
+              <app-detail [heading]="textHeader" [text]="textParagraph" [cost]="textCost" *ngFor="let img of contentOne"></app-detail>
+          </div>
+          <div class="detail-second-row">
+            <app-detail [heading]="textHeader" [text]="textParagraph" [cost]="textCost" *ngFor="let img of contentOne"></app-detail>
+          </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,28 @@
+<div class="register">
+    <div class="register-image">
+      <img src="assets/image1.png" alt="" full />
+    </div>
+    <div class="register-text">
+      <div>
+        <div class="register-text-heading">
+          <h2>Welcome to Lilies!</h2>
+        </div>
+  
+        <div class="register-description">
+          <div class="register-description">
+            <app-input [textMessage]="inputName"></app-input>
+            <app-input [textMessage]="inputEmail"></app-input>
+            <app-input [textMessage]="inputPassword"></app-input>
+            
+            <br />
+            <app-button [buttonText]="registerButton" (onclick)="toDashPage()"></app-button>
+          </div>
+        </div>
+  
+  
+        <div class="LOGIN">
+          Already have an account.<b>LOGIN</b>
+        </div>
+      </div>
+    </div>
+  </div>
